@@ -9,12 +9,12 @@
       <div class="col mb-5">
         <div class="card h-100">
           <!-- Product image-->
-          <img class="card-img-top" src="<?php echo $product->image ?>" alt="..." />
+          <img class="card-img-top" src="<?php echo $product->id ?>" alt="..." />
           <!-- Product details-->
           <div class="card-body p-4">
             <div class="text-center">
               <!-- Product name-->
-              <h5 class="fw-bolder"><?php echo $product->name ?></h5>
+              <h5 class="fw-bolder"><?php echo $product->nomeMarca ?></h5>
               <!-- Product price-->
               R$ <?php echo number_format($product->price, 2, ',', '.') ?>
             </div>

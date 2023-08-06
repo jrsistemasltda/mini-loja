@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\library\View;
 use app\library\Redirect;
+use app\database\models\Marca;
 use Exception;
 
 
@@ -12,7 +13,14 @@ class MarcaController
  
     public function index()
     {
-      return View::render('marca');
+        $model = marca::all('id, nomeMarca');
+
+       // var_dump($model);
+       // die();
+    
+        View::render('marca', ['model' => $model]);
+
+      // return View::render('marca');
     }
   
     public function store()

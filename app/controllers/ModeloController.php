@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\database\models\Modelo;
 use app\library\View;
 use app\library\Redirect;
 use Exception;
@@ -11,7 +12,14 @@ class ModeloController
   
   public function index()
   {
-    return View::render('modelo');
+    $model = Modelo::all('id, nomeModelo');
+
+    // var_dump($model);
+    // die();
+ 
+     View::render('modelo', ['model' => $model]);
+
+   // return View::render('marca');
   }
 
   
