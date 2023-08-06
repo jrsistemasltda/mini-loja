@@ -4,17 +4,17 @@ namespace app\controllers;
 
 use app\library\View;
 use app\library\Redirect;
-use app\database\models\User;
-use app\library\Auth;
 use Exception;
 
-class LoginController
+class ModeloController
 {
   
   public function index()
   {
-    return View::render('login');
+    return View::render('modelo');
   }
+
+  
 
   public function store()
   {

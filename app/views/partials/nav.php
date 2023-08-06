@@ -7,6 +7,10 @@
     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
       <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="/cart">Cart</a></li>
+      <li class="nav-item"><a class="nav-link" href="/marca">Opção 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="/modelo">Opçção 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="/veiculo">Opção 3</a></li>
+      <li class="nav-item"><a class="nav-link" href="/anuncio">Opção 4</a></li>
       <li class="nav-item">
         <?php if ($instances['auth']::auth()) : ?>
         <a class="nav-link">Bem vindo,

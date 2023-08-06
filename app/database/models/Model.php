@@ -24,6 +24,7 @@ abstract class Model
       return $query->fetchAll(PDO::FETCH_CLASS, static::class);
 
       Transaction::close();
+      
     } catch (PDOException $e) {
       Transaction::rollback();
     }
