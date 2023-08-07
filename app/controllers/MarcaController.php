@@ -13,7 +13,7 @@ class MarcaController
  
     public function index()
     {
-        $model = marca::all('id, nomeMarca');
+        $model = marca::all('id, nome');
 
        // var_dump($model);
        // die();

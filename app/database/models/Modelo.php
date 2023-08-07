@@ -8,7 +8,7 @@ class Modelo extends Model
   public static string $table = 'modelo';
   public readonly int $idMarca;
   public readonly int $id;
-  public readonly string $nomeModelo;
+  public readonly string $nome;
  
 }
 

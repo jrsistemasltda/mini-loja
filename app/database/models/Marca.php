@@ -7,7 +7,7 @@ class Marca extends Model
 {
   public static string $table = 'marca';
   public readonly int $id;
-  public readonly string $nomeMarca;
+  public readonly string $nome;
  
 }
 

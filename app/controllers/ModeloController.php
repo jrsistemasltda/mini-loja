@@ -12,7 +12,7 @@ class ModeloController
   
   public function index()
   {
-    $model = Modelo::all('id, nomeModelo');
+    $model = Modelo::all('id, nome');
 
     // var_dump($model);
     // die();

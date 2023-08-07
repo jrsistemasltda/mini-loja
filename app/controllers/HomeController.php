@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\database\models\Anuncio;
 use app\database\models\Marca;
 use app\database\models\Modelo;
 use app\library\Cart;
@@ -13,11 +14,11 @@ class HomeController
 {
   public function index()
   {
-    $products = Marca::all('id, nomeMarca');
+    $model = Anuncio::all('id, Descricao, PrecoVenda');
 
     //var_dump($products);
   //  die();
 
-    View::render('home', ['products' => $products]);
+    View::render('home', ['model' => $model]);
   }
 }
